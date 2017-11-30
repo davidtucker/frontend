@@ -59,7 +59,7 @@ echo ""
 
 wget https://github.com/davidtucker/frontend/tarball/master -O openphoto.tar.gz
 tar -zxvf openphoto.tar.gz > /dev/null 2>&1
-mv photo-frontend-* /var/www/openphoto
+mv davidtucker-frontend-* /var/www/openphoto
 sudo rm openphoto.tar.gz
 
 echo ""
