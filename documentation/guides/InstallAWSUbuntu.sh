@@ -32,7 +32,7 @@ echo "===================================================="
 echo ""
 echo ""
 
-apt install -y apache2 curl vim git-core build-essential exiftran mysql-server mysql-client php7.0 libapache2-mod-php7.0 php7.0-curl curl php7.0-gd php7.0-mcrypt php7.0-mysql php-pear php-xml php-apcu libpcre3-dev php7.0-dev php-imagick
+apt install -y apache2 curl vim git-core build-essential exiftran mysql-client php7.0 libapache2-mod-php7.0 php7.0-curl curl php7.0-gd php7.0-mcrypt php7.0-mysql php-pear php-xml php-apcu libpcre3-dev php7.0-dev php-imagick
 a2enmod rewrite
 a2enmod deflate
 a2enmod expires
@@ -100,8 +100,8 @@ echo "===================================================="
 echo ""
 echo ""
 
-sed -e 's/file_uploads.*/file_uploads = On/g' -e 's/upload_max_filesize.*/upload_max_filesize = 16M/g' -e 's/post_max_size.*/post_max_size = 16M/g' /etc/php5/apache2/php.ini > /etc/php5/apache2/php.ini.tmp
-mv /etc/php5/apache2/php.ini.tmp /etc/php5/apache2/php.ini
+sed -e 's/file_uploads.*/file_uploads = On/g' -e 's/upload_max_filesize.*/upload_max_filesize = 16M/g' -e 's/post_max_size.*/post_max_size = 16M/g' /etc/php/7.0/apache2/php.ini > /etc/php/7.0/apache2/php.ini.tmp
+mv /etc/php/7.0/apache2/php.ini.tmp /etc/php/7.0/apache2/php.ini
 
 echo ""
 echo ""
