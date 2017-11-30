@@ -17,7 +17,7 @@ echo "===================================================="
 echo ""
 echo ""
 
-apt-get install --assume-yes --quiet python-software-properties software-properties-common
+apt-get --assume-yes --quiet install python-software-properties software-properties-common
 LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 apt-get update --assume-yes --quiet
 apt-get upgrade --assume-yes --quiet
