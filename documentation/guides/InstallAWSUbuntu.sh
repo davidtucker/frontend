@@ -17,12 +17,12 @@ echo "===================================================="
 echo ""
 echo ""
 
-apt-get install python-software-properties software-properties-common
+apt-get install --assume-yes --quiet python-software-properties software-properties-common
 LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 apt-get update --assume-yes --quiet
 apt-get upgrade --assume-yes --quiet
 
-sudo apt-get purge php5-common -y
+apt-get purge --assume-yes --quiet php5-common -y
 
 echo ""
 echo ""
@@ -32,7 +32,7 @@ echo "===================================================="
 echo ""
 echo ""
 
-apt install -y apache2 curl vim git-core build-essential exiftran mysql-client php7.0 libapache2-mod-php7.0 php7.0-curl curl php7.0-gd php7.0-mcrypt php7.0-mysql php-pear php-xml php-apcu libpcre3-dev php7.0-dev php-imagick
+apt install --assume-yes --quiet apache2 curl vim git-core build-essential exiftran mysql-client php7.0 libapache2-mod-php7.0 php7.0-curl curl php7.0-gd php7.0-mcrypt php7.0-mysql php-pear php-xml php-apcu libpcre3-dev php7.0-dev php-imagick
 a2enmod rewrite
 a2enmod deflate
 a2enmod expires
