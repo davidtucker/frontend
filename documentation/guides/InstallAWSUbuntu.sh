@@ -111,7 +111,7 @@ echo "===================================================="
 echo ""
 echo ""
 
-/etc/init.d/apache2 restart
+service apache2 restart
 
 # finding IP address and compensating for possible EC2 installation
 EC2=`curl --silent --connect-timeout 1 http://169.254.169.254/latest/meta-data/public-hostname`
